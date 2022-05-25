@@ -1,12 +1,14 @@
+
 version: 2.1
 
-orbs: 
-  win: circleci/windows@2.2.0
+orbs:
+  win: circleci/windows@4.1
 
 jobs:
   build:
     executor: win/default
     steps:
-        -checkout
-        -run: dotnet tool install --global PowerShell
-        -run: pwsh ./proof-of-concept.ps1
+      - checkout
+      - run: dotnet tool install --global PowerShell
+      - run: pwsh ./<my-script>.ps1
+
