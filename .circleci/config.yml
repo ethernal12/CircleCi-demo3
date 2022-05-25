@@ -9,6 +9,6 @@ jobs:
     executor: win/default
     steps:
       - checkout
-      - run: dotnet tool install --global PowerShell
-      - run: pwsh ./<my-script>.ps1
+      - run: dotnet tool install --global Command
+     
 

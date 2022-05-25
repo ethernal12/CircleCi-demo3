@@ -1,1 +1,0 @@
-cmd c/ "echo anything > newfile.txt"
