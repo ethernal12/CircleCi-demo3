@@ -8,4 +8,4 @@ orbs:
      steps:
         -checkout
         -run: dotnet tool install --global PowerShell
-        -run: pwsh ./<my-script>.ps1
+        -run: pwsh ./proof-of-concept.ps1
